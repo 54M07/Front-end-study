@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>App Lista de Super Mercado</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        header{
+            background-color: rgb(99, 20, 228);
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+        .lista-cadastro{
+            display: flex;
+            margin: 20px 0;
+            padding:0 20px ;
+        }
+        .lista-cadastro input[type=text]{
+            flex: 1;
+            height: 40px;
+        }
+        .lista-produto-single{
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            margin: 20px 0;
+        }
+        .lista-produto-single h3{
+            flex: 1;
+            padding: 0 20px;
+        }
+        h3.price-produto{
+            text-align: right;
+            font-size: 18px;
+            background-color: ;
+        }
+        h3.price-produto > span{
+            background-color: rgb(67, 124, 189);
+            padding: 8px 10px;
+            border-radius: 20px;
+            color: white;
+        }
+        .soma-produto{
+            margin: 20px;
+        }
+        .botao-limpar{
+            color: white;
+            background-color:  rgb(67, 124, 189);;
+            border-radius: 10%;
+            padding: 6px;
+            border: 0;
+
+
+        }
+        .botao-cadastro{
+            color: white;
+            background-color:  rgb(67, 124, 189);;
+            border-radius: 10%;
+            padding: 6px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <header> 
+        <h2>App Lista de SuperMercado</h2>
+    </header>
+    
+    <div class="lista-cadastro">
+        <input type="text"  placeholder="nome do produto..."    name="nome_produto" />
+        <input type="number"  name="price" step="0.01"/>
+        <input class="botao-cadastro" type="submit" name="acao"    value="Cadastrar" />
+    </div>
+    
+    <div class="lista-produtos">
+       
+
+
+    </div>
+    
+    <div class="soma-produto">
+        <h1>Total: R$0</h1>
+    </div>
+
+<button class="botao-limpar" name="limpar">Limpar</button>
+
+    <script src="supermercado.js"  ></script> 
+</body>
+</html>
